@@ -8,5 +8,6 @@
   ],
   "scripts": {
     "build": "npm run build --workspaces"
-  }
+  },
+  "author": "vlt technology inc. <support@vlt.sh> (http://vlt.sh)"
 }

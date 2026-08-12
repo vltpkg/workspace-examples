@@ -2,5 +2,6 @@
   "name": "workspace-examples",
   "version": "0.0.1",
   "description": "Example monorepos for publishing packages from workspaces",
-  "private": true
+  "private": true,
+  "author": "vlt technology inc. <support@vlt.sh> (http://vlt.sh)"
 }
