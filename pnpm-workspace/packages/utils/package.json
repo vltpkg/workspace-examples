@@ -21,8 +21,9 @@
     "dist"
   ],
   "scripts": {
-    "build": "tsc",
-    "lint": "tsc --noEmit"
+    "build": "tsc -p tsconfig.json",
+    "lint": "tsc --noEmit",
+    "prepublishOnly": "pnpm run lint && pnpm run build"
   },
   "devDependencies": {
     "typescript": "^5.3.3"

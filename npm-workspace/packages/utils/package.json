@@ -22,7 +22,8 @@
   ],
   "scripts": {
     "build": "tsc",
-    "lint": "tsc --noEmit"
+    "lint": "tsc --noEmit",
+    "prepublishOnly": "npm run lint && npm run build"
   },
   "devDependencies": {
     "typescript": "^5.3.3"
