@@ -8,3 +8,4 @@ bun.lockb
 .env
 .DS_Store
 *.tsbuildinfo
+**/.serena/**

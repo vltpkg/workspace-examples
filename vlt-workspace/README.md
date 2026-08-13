@@ -1,6 +1,6 @@
-# npm-workspace-example
+# vlt-workspace-example
 
-Example npm monorepo with multiple publishable packages.
+Example vlt monorepo with multiple publishable packages.
 
 ## Packages
 
@@ -9,31 +9,31 @@ Example npm monorepo with multiple publishable packages.
 
 ## Setup
 
-1. Update `@YOUR-ACCOUNT` in `.npmrc` and all `package.json` files with your account slug
+1. Update `@YOUR-ACCOUNT` in `vlt.json` and all `package.json` files with your account slug
 2. Configure authentication:
    ```bash
-   npm login --registry=https://registry.vlt.io/YOUR-ACCOUNT/main/ --scope=@YOUR-ACCOUNT
+   vlt login --registry=https://registry.vlt.io/YOUR-ACCOUNT/main/
    ```
 3. Install dependencies:
    ```bash
-   npm install
+   vlt install
    ```
 4. Build packages:
    ```bash
-   npm run build
+   vlt build
    ```
 
 ## Publishing
 
 To publish all packages:
 ```bash
-npm publish --workspaces
+vlt publish --recursive
 ```
 
 To publish a specific package:
 ```bash
 cd packages/greeting
-npm publish
+vlt publish
 ```
 
 See the [vlt publishing guide](/guides/publish-packages-from-workspace) for more details.

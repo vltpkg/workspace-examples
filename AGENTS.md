@@ -1,13 +1,14 @@
 # workspace-examples
 
-Two workspace publishing examples: `pnpm-workspace/` and `npm-workspace/`. Each has 2 packages (`utils`, `cli`).
+Three workspace publishing examples: `vlt-workspace/`, `pnpm-workspace/`, and `npm-workspace/`. Each has 2 packages (`utils`, `greeting`).
 
 ## Structure
 
+- **vlt-workspace/** — Uses `vlt.json`
 - **pnpm-workspace/** — Uses `pnpm-workspace.yaml`
 - **npm-workspace/** — Uses `workspaces` in `package.json`
 
-Both use `packages/{utils,cli}/` with matching structure. Config files: `.npmrc` at workspace root.
+All use `packages/{utils,greeting}/` with matching structure.
 
 ## Key Points
 
@@ -19,6 +20,12 @@ Both use `packages/{utils,cli}/` with matching structure. Config files: `.npmrc`
 ## Commands
 
 ```bash
+# vlt-workspace
+vlt install
+vlt build
+vlt publish --recursive      # Publish all
+cd packages/utils && vlt publish   # Publish one
+
 # pnpm-workspace
 pnpm install
 pnpm build

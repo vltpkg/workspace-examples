@@ -1,0 +1,13 @@
+{
+  "name": "vlt-workspace-example",
+  "workspaces": ["packages/*"],
+  "registries": {
+    "vlt": "https://registry.vlt.io/<account>/main/",
+    "npm": "https://registry.npmjs.org/"
+  },
+  "scripts": {
+    "build": "vlt exec -- tsc -b",
+    "test": "vlt exec -- vitest run",
+    "lint": "vlt exec -- eslint src --ext ts"
+  }
+}

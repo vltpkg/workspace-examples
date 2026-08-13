@@ -6,6 +6,7 @@ Example monorepos demonstrating how to publish multiple packages from workspace-
 
 ## Examples
 
+- **[vlt-workspace](./vlt-workspace)** — Publishing packages from a vlt monorepo
 - **[pnpm-workspace](./pnpm-workspace)** — Publishing packages from a pnpm monorepo
 - **[npm-workspace](./npm-workspace)** — Publishing packages from an npm workspace
 

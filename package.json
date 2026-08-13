@@ -3,5 +3,13 @@
   "version": "0.0.1",
   "description": "Example monorepos for publishing packages from workspaces",
   "private": true,
+  "scripts": {
+    "lint": "npm run lint -w vlt-workspace -w pnpm-workspace -w npm-workspace"
+  },
+  "workspaces": [
+    "vlt-workspace",
+    "pnpm-workspace",
+    "npm-workspace"
+  ],
   "author": "vlt technology inc. <support@vlt.sh> (http://vlt.sh)"
 }

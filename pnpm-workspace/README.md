@@ -5,7 +5,7 @@ Example pnpm monorepo with multiple publishable packages.
 ## Packages
 
 - `@YOUR-ACCOUNT/utils` — Utility functions
-- `@YOUR-ACCOUNT/cli` — CLI tools
+- `@YOUR-ACCOUNT/greeting` — Greeting utilities
 
 ## Setup
 
@@ -32,7 +32,7 @@ pnpm -r publish
 
 To publish a specific package:
 ```bash
-cd packages/utils
+cd packages/greeting
 pnpm publish
 ```
 

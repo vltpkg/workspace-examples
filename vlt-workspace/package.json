@@ -1,0 +1,10 @@
+{
+  "name": "vlt-workspace-example",
+  "version": "0.0.1",
+  "description": "Example vlt monorepo for publishing packages",
+  "private": true,
+  "scripts": {
+    "lint": "vlt exec -- tsc --noEmit"
+  },
+  "author": "vlt technology inc. <support@vlt.sh> (http://vlt.sh)"
+}
